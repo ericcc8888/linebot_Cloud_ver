@@ -72,7 +72,6 @@ def read_file_from_gcs(request):
                         text = "沒有找到相關餐廳資訊。"
                         replymessage = TextSendMessage(text)
                         line_bot_api.reply_message(event.reply_token, replymessage)
-                        user_states = 0
 
                 elif user_message == "附近美食":
                     replymessage = [FlexSendMessage(
